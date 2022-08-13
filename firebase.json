@@ -6,13 +6,24 @@
       "**/.*",
       "**/node_modules/**"
     ],
-    
-    "headers": [{
-      "source": "**",
-      "headers": [{
-        "key":"Content-Security-Policy",
-        "value":"script-src 'self'"
-      }]
-    }]
+    "headers": [
+      {
+        "source": "**",
+        "headers": [
+          {
+            "key": "Content-Security-Policy",
+            "value": "script-src 'self'"
+          }
+        ]
+      }
+    ]
+  },
+  "emulators": {
+    "hosting": {
+      "port": 5000
+    },
+    "ui": {
+      "enabled": true
+    }
   }
 }
