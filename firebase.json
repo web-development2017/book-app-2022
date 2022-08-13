@@ -6,9 +6,9 @@
       "**/.*",
       "**/node_modules/**"
     ],
+    "source": "*",
     "headers": [
       {
-        "source": "*",
         "key":"Content-Security-Policy",
         "value":"script-src 'self'"
       }
