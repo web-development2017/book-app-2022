@@ -6,7 +6,7 @@
       "**/.*",
       "**/node_modules/**"
     ],
-    "source": "*",
+    "source": "out",
     "headers": [
       {
         "key":"Content-Security-Policy",
