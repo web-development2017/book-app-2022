@@ -7,7 +7,11 @@
       "**/node_modules/**"
     ],
     "headers": [
-      {"key":"Content-Security-Policy","value":"script-src 'self'"}
+      {
+        "source": "*",
+        "key":"Content-Security-Policy",
+        "value":"script-src 'self'"
+      }
     ]
   }
 }
