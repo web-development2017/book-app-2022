@@ -1,6 +1,9 @@
 import Head from 'next/head'
 import '../styles/globals.css'
 import { AppProps } from 'next/app'
+import '../src/config/firebase-config'
+import { AuthProvider } from '../src/hooks/auth'
+
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -32,7 +35,12 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         <link rel="apple-touch-icon" href="/apple-icon.png"></link>
         <meta name="theme-color" content="#317EFB" />
       </Head>
-      <Component {...pageProps} />
+
+      <AuthProvider>
+        <Component {...pageProps} />
+      </AuthProvider>      
+      
+      
     </>
   )
 }
